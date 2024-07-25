@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styless.css">
+
+<title>EduVerse</title>
+<style>
+    /* Some basic styling for demonstration */
+    .subject { cursor: pointer; }
+    .chapter { display: none; }
+    .chapter.active { display: block; }
+    .subtopic { cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="marquee">
+    <p>Welcome to our educational video platform dedicated to supporting students and educators associated with Savitribai Phule Pune University (SPPU). Our curated collection of videos is tailored to align with the university's syllabus, offering a valuable resource for enhancing learning and teaching experiences. Click on a subject to explore its chapters and subtopics, and discover engaging content that complements your coursework.
+</p>
+</div>
+<fieldset class="f1">
+<div class="header">
+    <h1 class="heading">Welcome to EduVerse </h1>
+    <p class="intro">Our website provides a curated collection of educational videos tailored to the syllabus of Savitribai Phule Pune University (SPPU). </br>Students and educators can easily find videos that align with their coursework, helping them enhance their learning and teaching experience. </br>Click on a subject to explore its chapters and subtopics.
+    </p>
+</div>
+</fieldset>
+
+<fieldset class="f2">
+<h2>Choose the subject you want to learn:</h2>
+</fieldset>
+<fieldset class="f3">
+<div class="subjects-container">
+
+<!-- Physics -->
+<div class="subject" onclick="toggleChapter('physics')" id="phy">Physics</div>
+<div id="physics" class="chapter">
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('physics-1')">Chapter 1: Diffraction</a></li>
+        <div id="physics-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/T-e_OHNorn0?si=pz1vU_3lX3HpDOSi">1: Diffraction</a></li>
+                <li><a href="https://youtu.be/_jL-DsQqJhA?si=nakpnLB_Jqre7Hha">2: Diffraction grating</a></li>
+                <li><a href="https://youtu.be/JiYDacp2GU4?si=KZm4vaWds2BeTtn5">3: Rayleigh's Criterion</a></li>
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('physics-2')">Chapter 2: Interference</a></li>
+        <div id="physics-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/gKjIYkSxqn4?si=fPDmW2l9vQD8-xXj">1: Interference Part I</a></li>
+                <li><a href="https://youtu.be/_jL-DsQqJhA?si=nakpnLB_Jqre7Hha">2: Interference Part II</a></li>
+            </ul>
+        </div>
+    </ul>
+</div>
+<!-- Chemistry -->
+
+<div class="subject" onclick="toggleChapter('chemistry')" id="chem">Chemistry</div>
+<div id="chemistry" class="chapter">
+    
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('chemistry-1')">Chapter 1: Hardness</a></li>
+        <div id="chemistry-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/MuwdU8rUzjY?feature=shared">1: Factors affecting hardness</a></li>
+                <li><a href="https://youtu.be/QUHozLWE0fA?feature=shared">2: Water Purification</a></li>
+                </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('chemistry-2')">Chapter 2: Electrochemistry</a></li>
+        <div id="chemistry-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/rrZ3TSQ6BNg?feature=shared">1: Colomel and glass electrode</a></li>
+                <li><a href="https://youtu.be/QUHozLWE0fA?feature=shared">2: Water Purification</a></li>
+                </ul>
+        </div>
+    </ul>
+</div>
+
+<!-- Basic Electrical Engineering -->
+
+<div class="subject" onclick="toggleChapter('electrical')" id="bee">BEE</div>
+<div id="electrical" class="chapter">
+    
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('electrical-1')">Chapter 1: Electromagnetism</a></li>
+        <div id="electrical-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/J9zgR7rbqzo?si=iy__Blb6UiafP_JH">1: Basic of Electromagnetism </a></li>
+                <li><a href="https://youtu.be/i5lVi5jx_gM?si=9ZZ6MwLDZIRMK-DQ">2: Cross and Dot convections </a></li>
+                
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('electrical-2')">Chapter 2: AC Ciruit</a></li>
+        <div id="electrical-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/STvcMdRFheI?si=vLO2mDnpgPnIpNQj">1: Phase angle and Phasor</a></li>
+                <li><a href="https://youtu.be/MoDH8asgmzc?si=2gYmRtbrhSj2p5QP">2: Fundamental of AC Circuit </a></li>
+                
+            </ul>
+        </div>
+    </ul>
+</div>
+
+<!-- Systems in Mechanical Engineering -->
+
+<div class="subject" onclick="toggleChapter('mechanical')" id="sme">SME</div>
+<div id="mechanical" class="chapter">
+    
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('mechanical-1')">Chapter 1: Energy sources</a></li>
+        <div id="mechanical-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/5OMOFIPYXi0?si=rGVujHevx9DMWjNR">1: Thermal Power Plant</a></li>
+                <li><a href="https://youtu.be/X0xxWVp9z1g?si=DVb1LHWiNSi0uJJa">2: Wind Energy</a></li>
+                
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('mechanical-2')">Chapter 2:Thermodynamics</a></li>
+        <div id="mechanical-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/oBWPnVfUuZ8?si=CoHvI-Is0qufhUnX">1: Heat and Work</a></li>
+                <li><a href="https://youtu.be/-KnGVk4oA5c?si=cEjlNT-u9rUWGHpE">2: Heat Engine</a></li>
+                
+            </ul>
+        </div>
+    </ul>
+</div>
+
+<!-- Programming Problem Solving -->
+
+<div class="subject" onclick="toggleChapter('programming')" id="pps">PPS</div>
+<div id="programming" class="chapter">
+    
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('programming-1')">Chapter 1: Introduction to Python</a></li>
+        <div id="programming-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/6hAANK15IQM?feature=shared">1: Algorithm</a></li>
+                <li><a href="https://youtu.be/S_jj_7aFsV8?feature=shared">2: Flowchart</a></li>
+                
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('programming-2')">Chapter 2: Functions</a></li>
+        <div id="programming-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/vKLEZ6HwZl0?feature=shared">1: Functions</a></li>
+                <li><a href="https://youtu.be/f_LZPXXXyLE?feature=shared">2: Modules</a></li>
+                
+            </ul>
+        </div>
+    </ul>
+</div>
+
+<!-- Mathematics I -->
+
+<div class="subject" onclick="toggleChapter('math1')" id="m1">Mathematics I</div>
+<div id="math1" class="chapter">
+  
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('math1-1')">Chapter 1: Differential Calculus</a></li>
+        <div id="math1-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/bQ_B9cHBYfQ?si=5QlOtf48X7nNRK-G">1: Rolle's Theorem</a></li>
+                <li><a href="https://youtu.be/B_k3cWFoTp4?si=wm8OFrj-ufhCa7gh">2: Mean Value Theorem</a></li>
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('math1-2')">Chapter 2: Fourier Series</a></li>
+        <div id="math1-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/v1-O5LCD0a0?si=dekPXKR9rSCsVnZJ">1: Dirichlet’s conditions</a></li>
+                <li><a href="https://youtu.be/OxQ_yxUBVeI?si=TXqDJhySwLHrQkGn">2: Full Range Fourier Series</a></li>
+            </ul>
+        </div>
+    </ul>
+</div>
+
+<!-- Mathematics II -->
+
+<div class="subject" onclick="toggleChapter('math2')" id="m2">Mathematics II</div>
+<div id="math2" class="chapter">
+   
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('math2-1')">Chapter 1:Integral Calculus</a></li>
+        <div id="math2-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/hP-qDZV_BZE?si=CjCcp3JXh9mHPgm4"> 1:Reduction Formula</a></li>
+                <li><a href="https://youtu.be/LLX0UjUGL5w?si=L5YR8geQTH0DdvNJ"> 2:Gamma Function</a></li>
+                
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('math2-2')">Chapter 2:Curve Tracing</a></li>
+        <div id="math2-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/BeIrYruuoF4?si=TlaxrMsNp9dsGLsa"> 1:Curve tracing</a></li>
+                <li><a href="https://youtu.be/0-Bq9guV6Rc?si=5E8I5QEBj3kkY-Sk"> 2:Rectification curves</a></li>
+                
+            </ul>
+        </div>
+        <!-- Add more chapters and subtopics as needed -->
+    </ul>
+</div>
+
+<!-- Basic Electronic Engineering -->
+
+<div class="subject" onclick="toggleChapter('electronic')" id="bxe">BXE</div>
+<div id="electronic" class="chapter">
+    
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('electronic-1')">Chapter 1: Introduction to Electronics</a></li>
+        <div id="electronic-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/K9IfR-LGml8?si=o9bz6uUVZYjK5vrg">1: Active and Passive Components</a></li>
+                <li><a href="https://youtu.be/icrAf1us2IQ?si=tTPiLXSFGlDI1cmF">2: P-N Junction Diode</a></li>
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('electronic-2')">Chapter 2: Number System and Logic System</a></li>
+        <div id="electronic-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/6rxYUUcymMQ?si=hpImJjRgUQxiLnrE">1: Number System</a></li>
+                <li><a href="https://youtu.be/nMTxK54Pr2w?si=g646E9Rqvm9MV_Hh">2: De-Morgan's Theorem</a></li>
+            </ul>
+        </div>
+    </ul>
+</div>
+
+<!-- Engineering Mechanics -->
+
+<div class="subject" onclick="toggleChapter('mechanics')" id="em">Engineering Mechanics</div>
+<div id="mechanics" class="chapter">
+    
+    <ul>
+        <li><a href="#" onclick="toggleSubtopic('mechanics-1')">Chapter 1: Resolution and Composition of Forces</a></li>
+        <div id="mechanics-1" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/PmzMlWLOJro?si=t27Dwgz29lsfbZP">1: Fundamental and Resolution of Forces</a></li>
+                <li><a href="https://youtu.be/YgJrcQclNrE?si=Y1gnH-VEhYiPZxhv">2: Varignon Theorem</a></li>
+                
+            </ul>
+        </div>
+        <li><a href="#" onclick="toggleSubtopic('mechanics-2')">Chapter 2: Equilibrium</a></li>
+        <div id="mechanics-2" class="subtopic" style="display:none;">
+            <ul>
+                <li><a href="https://youtu.be/pKnbTkAacrY?si=QEdl5O1vXxpGXBLT">1: Moment of Area</a></li>
+                <li><a href="https://youtu.be/O3Zp5n77f4k?si=pmgzOR8wQH__hwUi">2: Centroid</a></li>
+                
+            </ul>
+        </div>
+    </ul>
+</div>
+</div>
+</fieldset>
+<script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 EduVerse. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+</html>
